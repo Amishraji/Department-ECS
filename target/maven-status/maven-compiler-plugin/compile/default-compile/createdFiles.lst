@@ -1,0 +1,10 @@
+com\pranshu\crudproject\controller\DepartmentController.class
+com\pranshu\crudproject\exception\DepartmentNotFoundAdvice.class
+com\pranshu\crudproject\exception\DepartmentNotFoundException.class
+com\pranshu\crudproject\config\SecurityConfig.class
+com\pranshu\crudproject\config\AppConfig.class
+com\pranshu\crudproject\config\JwtAuthConverter.class
+com\pranshu\crudproject\CrudProjectApplication.class
+com\pranshu\crudproject\config\AwsSecrets.class
+com\pranshu\crudproject\model\Department.class
+com\pranshu\crudproject\repository\DepartmentRepository.class
