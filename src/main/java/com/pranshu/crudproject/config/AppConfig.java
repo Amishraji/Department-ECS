@@ -43,7 +43,7 @@ public class AppConfig {
 
         AWSSecretsManager client = AWSSecretsManagerClientBuilder.standard()
             .withRegion(region)
-            .withCredentials(DefaultAWSCredentialsProviderChain.getInstance())
+//            .withCredentials(DefaultAWSCredentialsProviderChain.getInstance())
             .build();
 
         GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest()
