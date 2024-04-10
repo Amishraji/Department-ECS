@@ -14,12 +14,15 @@
                 }
             ],
             "essential": true,
-            "environment": [
-                {
-                    "aws_access_key_id": "${{ secrets.AWS_ACCESS_KEY_ID }}",
-                    "aws_secret_access_key": "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-                  }
-            ],
+             "secrets": [
+        {
+          "name": "AWS_ACCESS_KEY_ID",
+          "valueFrom": "arn:aws:ssm:us-west-2:992382462614:parameter/demoapp/access_key_id"
+        },
+        {
+          "name": "AWS_SECRET_ACCESS_KEY",
+          "valueFrom": "arn:aws:ssm:us-west-2:992382462614:parameter/demoapp/secret_access_key"
+        }],
             "mountPoints": [],
             "volumesFrom": [],
             "logConfiguration": {
